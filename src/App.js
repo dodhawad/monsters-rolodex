@@ -30,7 +30,8 @@ class App extends Component {
     // );
 
     const filteredmonsteres = monsters.filter((monster) =>
-      monster.name.toLowerCase().includes(searchField.toLowerCase())
+      monster.name.toLowerCase().includes(searchField.toLowerCase()) ||
+      monster.email.toLowerCase().includes(searchField.toLowerCase())
     );
 
     return (
